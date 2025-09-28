@@ -10,7 +10,7 @@ interface UsersPageProps {
 
 const API_URL = 'https://jsonplaceholder.typicode.com/users';
 
-export const getStaticProps: GetStaticProps<UsersPageProps> = async () => {
+export const getStaticProps(): GetStaticProps<UsersPageProps> = async () => {
   try {
     const res = await fetch(API_URL);
     if (!res.ok) {
